@@ -103,7 +103,7 @@ a:hover{
 .board-item:hover{
 	opacity: 1;
 	transform: translate(0, -0.6vh);
-	/*filter: drop-shadow(0vh 0vh 2px #ffcc22);*/
+	filter: drop-shadow(0vh 0vh 2px #fff);
 }
 
 .baldachin{
@@ -119,7 +119,9 @@ a:hover{
 }
 .baldachin *{
 	cursor: pointer;
+	user-select: none;
 	vertical-align: middle;
+	transition-delay: 0s;
 }
 .baldachin li{
 	cursor: pointer;
@@ -128,6 +130,12 @@ a:hover{
 }
 .baldachin li:hover, .baldachin li:focus{
 	color: #f3d179;
+}
+.baldachin li i{
+	transition: color 0.2s, transform 0.3s;
+}
+.baldachin li:not(.baldachin-search):hover i{
+	transform: translate(0, -0.6vh);
 }
 .baldachin-brand{
 	opacity: 0;
@@ -172,7 +180,7 @@ a:hover{
 .baldachin-search i{
 	transition: 0.3s;
 }
-.baldachin-search.active i{
+.baldachin-search.active i, .baldachin-search:hover i{
 	color: #f3d179;
 	transform: rotate(-20deg);
 }
@@ -231,6 +239,7 @@ a:hover{
 	padding: 1rem 0;
 	border-bottom: 1px solid #eee;
 	font-size: 1.6rem;
+	text-align: left;
 }
 .torso-card p{
 	font-size: 1.2rem;

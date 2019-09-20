@@ -26,5 +26,5 @@ function turnSearch(ele) {
 }
 function toTop(){
     console.log('aqui');
-    document.documentElement.scrollTo(0, 0);
+    document.body.scrollTo(0, 0);
 }
