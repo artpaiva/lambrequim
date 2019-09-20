@@ -16,7 +16,7 @@ body{
 }
 .hero-bound{
 	padding: 12rem 4rem 12rem;
-	background-color: #df6a6a;
+	background-color: #f3d179;
 	background-image: url("lambrequim.png");
 	background-repeat: repeat-x;
 	background-size: 2rem;
@@ -27,6 +27,7 @@ body{
 	font-size: 6rem;
 	font-family: 'Cookie', cursive;
 	font-style: italic;
+	text-shadow: -4px 0 #00000077;
 }
 .hero-caption{
 	margin-bottom: -1rem;
@@ -46,7 +47,7 @@ body{
 	position: sticky;
 	top: 0;
 	width: 100%;
-	background-color: #BF5C5C;
+	background-color: #bb5a5a;
 	color: #fff;
 }
 .baldachin li{
