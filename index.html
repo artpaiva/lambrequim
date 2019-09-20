@@ -1,19 +1,88 @@
 <html>
 <head>
+	<meta charset=utf-8>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lustria&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700|Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="machinery.js"></script>
 </head>
 <body>
-	<div class="hero-bound">
-		<div class="hero-caption">Lambrequins</div>
-		<div class="hero-penant">Lambrequins</div>
-		<div class="hero-embroider"></div>
+	<div class="marquee-bound">
+		<div class="marquee-over"></div>
+		<div class="marquee-gable">Artur Paiva's</div>
+		<div class="marquee-penant">Lambrequins</div>
+		<div class="marquee-embroider"></div>
+		<div class="marquee-caption">Dicionário de Elementos Arquitetônicos</div>
 	</div>
-	<ul class="baldachin">
-		<li class="baldachin-brand"><label>Lambrequins</label></li>
+	<ul class="board">
+		<li class="board-item" onclick="location.href = 'https://github.com/artpaiva/';"><img src="Icons/github-white.png"/>
+		</li>
+		<li class="board-item"><img src="Icons/gmail-white.png"/>
+		</li>
+		<li class="board-item"><img src="Icons/twitter-white.png"/>
+		</li>
 	</ul>
-	<div class="torso">Lambrequins</div>
+	<ul class="baldachin" id="baldachin-bar">
+		<li class="baldachin-brand" onclick="toTop()">
+			<label>Lambrequins</label>
+		</li>
+		<li class="baldachin-item">
+			<i class="material-icons">explore</i>
+		</li>
+		<li class="baldachin-item">
+			<i class="material-icons">whatshot</i>
+		</li>
+		<li class="baldachin-item">
+			<i class="material-icons">account_balance</i>
+		</li>
+		<li class="baldachin-search" onclick="turnSearch(this)">
+			<i class="material-icons">search</i>
+		</li>
+		<li class="baldachin-cover">
+			<input class="baldachin-input" id="baldachinSearch" type="" name=""/>
+		</li>
+	</ul>
+	<div class="torso">
+		<ul class="breadcrumb-box">
+			<li class="breadcrumb-bran">artpaiva</li>
+			<li class="breadcrumb-bran active">Home</li>
+		</ul>
+		<div class="torso-card">
+			<div class="torso-penant">Lambrequins.com</div>
+			<p>Este projeto surgiu da necessidade que o autor sentiu após constantemente vivenciar a frustração de querer referir a algum objeto que constituía a estrutura ou decoração de alguma construção, e achar-se reiterativamente n'uma situação em que o mais perto que chegava de ao menos nomear tal objeto, era uma falha tentative de articular descrições da forma ou cor deste.<br>
+			Com o <i>lambrequins.io</i>, espero tratar e acorrer este problema (mesmo que apenas à minha própria pessoa), através de poder prover a notação da terminologia arquitetônica para desenvolvimento do vocabulário necessário para discutí-la sem ressalvos.</p>
+		</div>
+		<div class="torso-card">
+			<div class="torso-title">Lambrequins</div>
+			<p>Inicialmente, é necessário uma introdução ao elemento que deu o nome a este projeto e orna a  <a href="">marquíse</a> do próprio, o <b>lambrequim</b>. Etimologicamente de origem holandesa: <i>lamperkijm</i> (/lã'perkijn'/), e primeiramente transcrita à sua forma romança pelos franceses, os lambrequins são recortes ornamentais de madeira retalhada suspensas sob o <a href="">beiral</a> de casas tradicionalmente européias; que quando postos lado à lado em fieira horizontal formam um lambrequinado.
+			<br>Os lambrequins foram primeiro incorporados nas residências do Brasil por imigrantes poloneses, alemães, tchecos e outros povos eslavos; e assim, é mais comumente encontrado em centros de assentamento original destas comunidades, principalmente pela região Sul, desde o Paraná e Santa Catarina, e até mesmo em casas seletas e cresecentemente remotas do estado de São Paulo.</p>
+		</div>
+		<div class="torso-also">
+			<label class="also-title">Não confundir com:</label>
+			<ul class="also-list">
+				<li><a href="">Lambri</a></li>
+				<li><a href="">Balaústre</a></li>
+			</ul>
+			<label class="also-title">Elementos Relacionados:</label>
+			<ul class="also-list">
+				<li><a href="">Beiral</a></li>
+				<li><a href="">Mísula</a></li>
+				<li><a href="">Cornija</a></li>
+				<li><a href="">Dentículo</a></li>
+				<li><a href="">Boiserie</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="spine"></div>
+	<div class="floor-box">
+		<img src="lambrequim.png"/>
+		<img src="lambrequim.png"/>
+		<img src="lambrequim.png"/>
+		<div class="marquee-penant little">Lambrequins.</div>
+	</div>
 </body>
 </html>
