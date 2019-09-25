@@ -1,3 +1,3 @@
 # lambrequins
 -
-Projeto para um site para a compilação de vocabulário de elementos arquitetônicos
+Project for a lexicon of architectural and ornamental elements in Portuguese, featuring its meaning, etymological origin and correct usage.
