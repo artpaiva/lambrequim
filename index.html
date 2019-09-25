@@ -8,24 +8,26 @@
 	<link href="https://fonts.googleapis.com/css?family=Lustria&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700|Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="machinery.js"></script>
 </head>
 <body>
 	<div class="marquee-bound">
 		<div class="marquee-over"></div>
+		<div class="marquee-frechal"></div>
+		<ul class="board">
+			<li class="board-item" onclick="location.href = 'https://github.com/artpaiva/';"><img src="Icons/github-white.png"/>
+			</li>
+			<li class="board-item"><img src="Icons/gmail-white.png"/>
+			</li>
+			<li class="board-item"><img src="Icons/twitter-white.png"/>
+			</li>
+		</ul>
 		<div class="marquee-gable">Artur Paiva's</div>
 		<div class="marquee-penant">Lambrequins</div>
 		<div class="marquee-embroider"></div>
-		<div class="marquee-caption">Dicionário de Elementos Arquitetônicos</div>
+		<div class="marquee-caption">Léxico de Elementos Arquitetônicos e Ornamentais</div>
 	</div>
-	<ul class="board">
-		<li class="board-item" onclick="location.href = 'https://github.com/artpaiva/';"><img src="Icons/github-white.png"/>
-		</li>
-		<li class="board-item"><img src="Icons/gmail-white.png"/>
-		</li>
-		<li class="board-item"><img src="Icons/twitter-white.png"/>
-		</li>
-	</ul>
 	<ul class="baldachin" id="baldachin-bar">
 		<li class="baldachin-brand" onclick="toTop()">
 			<label>Lambrequins</label>
@@ -43,16 +45,58 @@
 			<i class="material-icons">search</i>
 		</li>
 		<li class="baldachin-cover">
-			<input class="baldachin-input" id="baldachinSearch" type="" name=""/>
+			<input class="baldachin-input" id="baldachinSearch" type="" name="" placeholder="Pressione Enter para pesquisar" />
 		</li>
 	</ul>
+	<div class="frieze">
+		<div class="frieze-field">
+			<div class="frieze-inscription">Não sabe por onde começar? Tente alguma das recomendações editoriais:</div>
+			<div class="frieze-type">Tecto</div>
+			<ul class="frieze-list">
+				<li>Cimalha</li>
+				<li>Dentil</li>
+				<li>Cimalha</li>
+				<li>Modilhão</li>
+				<li>Mísula</li>
+				<li>Sofite</li>
+				<li>Fáscia</li>
+			</ul>
+			<div class="frieze-type">Parede</div>
+			<ul class="frieze-list">
+				<li>Boiserie</li>
+				<li>Lambri</li>
+				<li>Arandela</li>
+				<li>Veneziana</li>
+			</ul>
+			<div class="frieze-type">Telhado</div>
+			<ul class="frieze-list">
+				<li>Mansarda</li>
+				<li>Beiral</li>
+				<li>Lambrequim</li>
+				<li>Cimalha</li>
+			</ul>
+			<div class="frieze-type">Iluminação</div>
+			<ul class="frieze-list">
+				<li>Arandela</li>
+				<li>Candeeiro</li>
+				<li>Reverbéro</li>
+				<li>Lustre</li>
+				<li>Lampião</li>
+			</ul>
+			<div class="frieze-type">Exterior</div>
+			<ul class="frieze-list">
+				<li>Cachepô</li>
+				<li>Reverbero</li>
+			</ul>
+		</div>
+	</div>
 	<div class="torso">
 		<ul class="breadcrumb-box">
 			<li class="breadcrumb-bran">artpaiva</li>
 			<li class="breadcrumb-bran active">Home</li>
 		</ul>
 		<div class="torso-card">
-			<div class="torso-penant">Lambrequins.com</div>
+			<div class="torso-penant">Bem vindo!</div>
 			<p>Este projeto surgiu da necessidade que o autor sentiu após constantemente vivenciar a frustração de querer referir a algum objeto que constituía a estrutura ou decoração de alguma construção, e achar-se reiterativamente n'uma situação em que o mais perto que chegava de ao menos nomear tal objeto, era uma falha tentative de articular descrições da forma ou cor deste.<br>
 			Com o <i>lambrequins.io</i>, espero tratar e acorrer este problema (mesmo que apenas à minha própria pessoa), através de poder prover a notação da terminologia arquitetônica para desenvolvimento do vocabulário necessário para discutí-la sem ressalvos.</p>
 		</div>
@@ -79,6 +123,7 @@
 	</div>
 	<div class="spine"></div>
 	<div class="floor-box">
+		<img src="lambrequim.png"/>
 		<img src="lambrequim.png"/>
 		<img src="lambrequim.png"/>
 		<img src="lambrequim.png"/>

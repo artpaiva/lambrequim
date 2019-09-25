@@ -8,7 +8,7 @@
 	scroll-behavior: smooth;
 }
 *::selection{
-	background: #f3d179;
+	background: #C7574C;
 	color: #070707;
 	text-shadow: 0px 0 transparent;
 }
@@ -29,28 +29,38 @@ a:hover{
 .marquee-bound{
 	position: relative;
 	padding: 12rem 4rem 4rem;
-	background-color: #f3d179;
+	background-color: #FA9073;
 	color: #fff;
 	text-align: center;
 }
 .marquee-over{
+	z-index: 101;
+	position: absolute;
 	width: 100%;
 	height: 10em;
 	left: 0;
 	top: 0;
-	z-index: 101;
-	position: absolute;
 	background-image: url("lambrequim.png");
 	background-repeat: space no-repeat;
 	background-size: 2rem;
-	background-attachment: fixed;
-	filter: drop-shadow(0vh 0vh 2px #00000022);
+	/*background-attachment: fixed;*/
+	filter: drop-shadow(-4px 0px 0px #C7745C);
+}
+.marquee-frechal{
+	z-index: 102;
+	position: absolute;
+	width: 100%;
+	height: 2.5rem;
+	left: 0;
+	top: 0;
+	box-shadow: 0 0.1rem 0.1rem 0 #00000033;
+	background-color: #fff;
 }
 .marquee-penant{
 	font-size: 6rem;
 	font-family: 'Cookie', cursive;
 	font-style: italic;
-	text-shadow: -4px 0 #A68A42;
+	text-shadow: -4px 0 #C7745C;
 }
 .marquee-penant.little{
 	font-size: 3rem;
@@ -69,9 +79,44 @@ a:hover{
 .marquee-embroider{
 	max-width: 1000px;
 	margin: 1.4rem auto;
-	border-top: 4px dotted #fff;
+	border-top: 2px dotted #fff;
 	padding: 0.1rem;
-	border-bottom: 1px solid #fff;
+	/*border-bottom: 1px solid #fff;*/
+}
+.frieze{
+	padding: 6rem 4rem 4rem;
+	background-color: #FA9073;
+	background-color: #E3675D;
+	color: #fff;
+}
+.frieze *{
+	font-family: 'Montserrat', sans-serif;
+}
+.frieze-field{
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+}
+.frieze-inscription, .frieze-list, .frieze-type{
+	padding-left: 2rem;
+	font-size: 1.4rem;
+	text-align: left;
+}
+.frieze-inscription{
+	padding-left: 0rem;
+	font-size: 1.6rem;
+}
+.frieze-type{
+	margin-top: 1rem;
+}
+.frieze-list{
+	opacity: 0.5;
+	padding: 0.4rem 2rem;
+	border-bottom: 1px solid #ffffff33;
+}
+.frieze-list li{
+	display: inline-block;
+	padding: 0 0.6rem;
 }
 
 .board{
@@ -79,15 +124,14 @@ a:hover{
 	width: 100%;
 	padding: 0.6rem;
 	background-color: #DEBE6F;
-	background-color: #f3d179;
-	color: #eeeeeeaa;
+	background-color: #FA9073;
+	color: #eeeeee;
 	font-size: 1.2rem;
 	text-align: center;
 	list-style-type: none;
 }
 .board-item{
 	position: relative;
-	opacity: 0.8;
 	box-sizing: content-box;
 	cursor: pointer;
 	padding: 2vh 3vh;
@@ -101,7 +145,6 @@ a:hover{
 	height: 100%;
 }
 .board-item:hover{
-	opacity: 1;
 	transform: translate(0, -0.6vh);
 	filter: drop-shadow(0vh 0vh 2px #fff);
 }
@@ -113,9 +156,15 @@ a:hover{
 	top: 0;
 	width: 100%;
 	padding-right: 1rem;
-	background-color: #52392A;
+	/*border-bottom: 1px solid #ffffff99;*/
+	background-color: #FA9073;
 	color: #fff;
 	text-align: center;
+	transition: 0.3s;
+}
+.baldachin.sticky{
+	background-color: #C7574C;
+	border-bottom: 1px solid transparent;
 }
 .baldachin *{
 	cursor: pointer;
@@ -126,9 +175,8 @@ a:hover{
 .baldachin li{
 	cursor: pointer;
 	display: inline-block;
-	transition: 0.3s;
 }
-.baldachin li:hover, .baldachin li:focus{
+.baldachin-brand:hover{
 	color: #f3d179;
 }
 .baldachin li i{
@@ -138,6 +186,7 @@ a:hover{
 	transform: translate(0, -0.6vh);
 }
 .baldachin-brand{
+	pointer-events: none;
 	opacity: 0;
 	float: left;
 	position: absolute;
@@ -152,6 +201,7 @@ a:hover{
 	filter: blur(10px);
 }
 .baldachin.sticky .baldachin-brand{
+	pointer-events: auto;
 	transform: translate(0, 0);
 	filter: blur(0px);
 	opacity: 1;
@@ -160,6 +210,9 @@ a:hover{
 	padding-right: 1.4rem;
 	border-right: 1px solid #fff;
 	font-family: 'Cookie', cursive;
+}
+.baldachin-brand:hover label{
+	border-right: 1px solid #f3d179;
 }
 .baldachin-item, .baldachin-search{
 	cursor: pointer;
@@ -193,8 +246,8 @@ a:hover{
 	height: 100%;
 	padding: 0.8rem 1.2rem;
 	padding-right: 4rem;
-	background-color: #52392A;
-	transition: 1s ease-in-out;
+	background-color: inherit;
+	transition: width 0.4s ease-in-out, background-color 0s;
 	overflow: hidden;
 }
 .baldachin-input{
@@ -204,12 +257,21 @@ a:hover{
 	padding: 0;
 	background-color: transparent;
 	color: #fff;
-	font-size: 1.4rem;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 1.4rem;
 	text-align: left;
+	font-weight: lighter;
+}
+.baldachin-input::placeholder{
+	color: #ffffffaa;
 }
 .baldachin-search.active + .baldachin-cover{
-	width: 100%;
+	width: 30rem;
+}
+@media only screen and (max-width: 1100px) {
+	.baldachin-search.active + .baldachin-cover{
+		width: 100%;
+	}
 }
 
 .torso{
@@ -224,6 +286,11 @@ a:hover{
 	color: #777;
 	font-size: 1.6rem;
 	font-family: 'Lustria', serif;
+}
+@media only screen and (max-width: 1100px) {
+	.torso{
+		max-width: 100%;
+	}
 }
 .torso-penant{
 	position: relative;
@@ -300,14 +367,14 @@ a:hover{
 	width: 100%;
 	max-width: 300px;
 	height: 600px;
-	margin: 0rem auto;
+	margin: 0rem 1rem;
 	padding: 1rem 1rem 3rem;
 	box-shadow: 0 0.2rem 0.2rem 0 #00000033;
 	background-color: #fff;
 	color: #777;
 	vertical-align: top;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1100px) {
 	.spine{
 		max-width: 100%;
 		margin: 1rem auto;
@@ -318,7 +385,7 @@ a:hover{
 	width: 100%;
 	margin-top: 2rem;
 	padding: 2rem 1rem 1.2rem;
-	background-color: #f3d179;
+	background-color: #FA9073;
 	color: #fff;
 	text-align: center;
 }

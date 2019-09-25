@@ -5,7 +5,7 @@ window.onload = function () {
 
     baldachin = document.getElementById("baldachin-bar");
     document.documentElement.scrollTo(0, 0);
-    sticky = baldachin.offsetTop;
+    sticky = baldachin.offsetTop - document.body.scrollTop;
 }
 
 
