@@ -1,15 +1,15 @@
 var baldachin;
 var sticky;
 window.onload = function () {
-    window.onscroll = function() {myFunction()};
+    window.onscroll = function() {checkSticky()};
 
-    baldachin = document.getElementById("baldachin-bar");
+    baldachin = document.getElementById("baldachin-wrap");
     document.documentElement.scrollTo(0, 0);
     sticky = baldachin.offsetTop - document.body.scrollTop;
 }
 
 
-function myFunction() {
+function checkSticky() {
   if (window.pageYOffset >= sticky) {
     // console.log('sticky');
     baldachin.classList.add("sticky");
