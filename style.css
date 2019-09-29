@@ -7,11 +7,11 @@
 	font-family: 'Lustria', serif;
 	scroll-behavior: smooth;
 }
-*::selection{
+/**::selection{
 	background: #C7574C;
 	color: #070707;
 	text-shadow: 0px 0 transparent;
-}
+}*/
 body{
 	background-color: #eee;
 	background-color: #fafafa;
@@ -31,8 +31,17 @@ a:hover{
 	position: relative;
 	padding: 12rem 4rem 4rem;
 	background-color: #FA9073;
+	background-color: #373F80;
+	background: linear-gradient( 250deg, #57bb54, rgb(71, 185, 197), #8056f5, #9454b9, #d6667e, #e6a646, #ca5a5a, #c4404b, #432F5C, #201a74);/*#68FD138, #20E61D, #0a0b18*/
+	background-size: 1600% 1600%;
 	color: #fff;
 	text-align: center;
+	animation: rainbow_shift 40s ease-in-out alternate-reverse infinite;
+}
+@keyframes rainbow_shift {
+  0% { background-position: 0% 100% }
+  50% { background-position: 100% 0% }
+  100% { background-position: 0% 100% }
 }
 .marquee-over{
 	z-index: 101;
@@ -45,7 +54,7 @@ a:hover{
 	background-repeat: space no-repeat;
 	background-size: 2rem;
 	/*background-attachment: fixed;*/
-	filter: drop-shadow(-4px 0px 0px #C7745C);
+	filter: drop-shadow(-4px 0px 0px #00000033);
 }
 .marquee-frechal{
 	z-index: 102;
@@ -61,7 +70,8 @@ a:hover{
 	font-size: 6rem;
 	font-family: 'Cookie', cursive;
 	font-style: italic;
-	text-shadow: -4px 0 #C7745C;
+	text-shadow: -4px 0 #66004444;
+	text-shadow: -4px 0 #333;
 }
 .marquee-penant.little{
 	font-size: 3rem;
@@ -86,9 +96,12 @@ a:hover{
 }
 .frieze{
 	padding: 5rem 1rem 3rem;
-	background-color: #FA9073;
-	background-color: #E3675D;
+	background-color: #7687FF;
+	background-color: #373F80;
+	background: linear-gradient( 250deg, #57bb5455, rgba(71, 185, 197, 120), #8056f599, #9454b999, #d6667e99, #e6a64699, #ca5a5a99, #c4404b99, #432F5C99, #201a7499);/*#68FD138, #20E61D, #0a0b18*/
+	background-size: 1000% 1000%;
 	color: #fff;
+	animation: rainbow_shift 40s ease-in-out alternate-reverse infinite;
 }
 .frieze *{
 	font-family: 'Montserrat', sans-serif;
@@ -131,15 +144,13 @@ a:hover{
 	text-decoration-color: #fff;
 }
 .frieze-list li a{
-	color: #fff;
+	color: inherit;
 }
 
 .board{
 	position: sticky;
 	width: 100%;
 	padding: 0.6rem;
-	background-color: #DEBE6F;
-	background-color: #FA9073;
 	color: #eeeeee;
 	font-size: 1.2rem;
 	text-align: center;
@@ -164,24 +175,30 @@ a:hover{
 	filter: drop-shadow(0vh 0vh 2px #fff);
 }
 
-.baldachin{
+.baldachin-wrapper{
 	z-index: 100;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
+	background: linear-gradient( 250deg, #57bb54, rgb(71, 185, 197), #8056f5, #9454b9, #d6667e, #e6a646, #ca5a5a, #c4404b, #432F5C, #201a74);/*#68FD138, #20E61D, #0a0b18*/
+	background-size: 2200% 2200%;
+	animation: rainbow_shift 40s ease-in-out alternate-reverse infinite;
+}
+.baldachin{
 	width: 100%;
 	padding-right: 1rem;
 	/*border-bottom: 1px solid #ffffff99;*/
 	box-shadow: 0 4px 4px 0px #00000011;
 	background-color: #FA9073;
+	background-color: transparent;
 	color: #fff;
 	text-align: center;
 	transition: 0.3s;
 }
-.baldachin.sticky{
+.baldachin-wrapper.sticky .baldachin{
 	background-color: #C7574C;
-	background-color: #E3675D;
-	border-bottom: 1px solid transparent;
+	background-color: #222;
+	animation: none;
 }
 .baldachin *{
 	cursor: pointer;
@@ -218,7 +235,7 @@ a:hover{
 	filter: blur(10px);
 	transition: 0.3s;
 }
-.baldachin.sticky .baldachin-brand{
+.baldachin-wrapper.sticky .baldachin .baldachin-brand{
 	pointer-events: auto;
 	transform: translate(0, 0);
 	filter: blur(0px);
@@ -267,6 +284,9 @@ a:hover{
 	background-color: inherit;
 	transition: width 0.4s ease-in-out, background-color 0s;
 	overflow: hidden;
+}
+.baldachin-wrapper.sticky .baldachin .baldachin-cover{
+	transition: width 0.4s ease-in-out, background-color 0.2s;
 }
 .baldachin-input{
 	width: 100%;
@@ -368,7 +388,16 @@ a:hover{
 	padding: 0.4rem 3rem;
 	border-left: 0.3rem solid #ddd;
 	font-size: 1.1rem;
+	line-height: 1.8rem;
 	font-style: italic;
+}
+.quote-author{
+	right: 0;
+	width: 100%;
+	text-align: right;
+}
+.quote-author:before{
+	content: '— ';
 }
 
 .torso-also{
@@ -424,9 +453,10 @@ a:hover{
 	color: #777;
 	vertical-align: top;
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1240px) {
 	.spine{
-		max-width: 100%;
+		width: 100%;
+		max-width: 720px;
 		margin: 1rem auto;
 	}
 }
