@@ -29,26 +29,28 @@
 		<div class="marquee-embroider"></div>
 		<div class="marquee-caption">Léxico de Elementos Arquitetônicos e Ornamentais</div>
 	</div>
-	<ul class="baldachin" id="baldachin-bar">
-		<li class="baldachin-brand" onclick="toTop()">
-			<label>Lambrequins</label>
-		</li>
-		<li class="baldachin-item">
-			<i class="material-icons">explore</i>
-		</li>
-		<li class="baldachin-item">
-			<i class="material-icons">whatshot</i>
-		</li>
-		<li class="baldachin-item">
-			<i class="material-icons">account_balance</i>
-		</li>
-		<li class="baldachin-search" onclick="turnSearch(this)">
-			<i class="material-icons">search</i>
-		</li>
-		<li class="baldachin-cover">
-			<input class="baldachin-input" id="baldachinSearch" type="" name="" placeholder="Pressione Enter para pesquisar" />
-		</li>
-	</ul>
+	<div class="baldachin-wrapper" id="baldachin-wrap">
+		<ul class="baldachin" id="baldachin-bar">
+			<li class="baldachin-brand" onclick="toTop()">
+				<label>Lambrequins</label>
+			</li>
+			<li class="baldachin-item">
+				<i class="material-icons">explore</i>
+			</li>
+			<li class="baldachin-item">
+				<i class="material-icons">whatshot</i>
+			</li>
+			<li class="baldachin-item">
+				<i class="material-icons">account_balance</i>
+			</li>
+			<li class="baldachin-search" onclick="turnSearch(this)">
+				<i class="material-icons">search</i>
+			</li>
+			<li class="baldachin-cover">
+				<input class="baldachin-input" id="baldachinSearch" type="" name="" placeholder="Pressione Enter para pesquisar" />
+			</li>
+		</ul>
+	</div>
 	<div class="frieze">
 		<div class="frieze-field">
 			<div class="frieze-inscription">Não sabe por onde começar? Tente alguma das recomendações editoriais:</div>
@@ -142,10 +144,15 @@
 		</div>
 		<div class="torso-card">
 			<div class="torso-title">Lambrequins</div>
-			<p>Inicialmente, é necessário uma introdução ao elemento que deu o nome a este projeto e orna a  <a href="">marquíse</a> do próprio, o <b>lambrequim</b>. Etimologicamente de origem holandesa: <i>lamperkijm</i> (/lã'perkijn'/), e primeiramente transcrita à sua forma romança pelos franceses, os lambrequins são recortes ornamentais de madeira retalhada suspensas sob o <a href="">beiral</a> de casas tradicionalmente européias; que quando postos lado à lado em fieira horizontal formam um lambrequinado.
+			<p>Inicialmente, é necessário uma introdução ao elemento que deu o nome a este projeto e orna a  <a href="">marquíse</a> do próprio, o <b>lambrequim</b>. Etimologicamente de origem holandesa: <i>lamperkijm</i> (/lã'perkin'/), e primeiramente transcrita à sua forma romança pelos franceses, os lambrequins são recortes ornamentais de madeira retalhada suspensas sob o <a href="">beiral</a> de casas tradicionalmente européias; que quando postos lado à lado em fieira horizontal formam um lambrequinado.
 			<br>Os lambrequins foram primeiro incorporados nas residências do Brasil por imigrantes poloneses, alemães, tchecos e outros povos eslavos; e assim, é mais comumente encontrado em centros de assentamento original destas comunidades, principalmente pela região Sul, desde o Paraná e Santa Catarina, e até mesmo em casas seletas e cresecentemente remotas do estado de São Paulo.</p>
-			<p class="torso-quote">"We must not show to all and sundry the secrets of the waters flowing in ocean and river, or the devices that work on these waters. Let there be convened a council of experts and masters in mechanical art to deliberate what is needed to compose and construct these works."</p>
+			<div class="torso-quote">
+				<p>"We must not show to all and sundry the secrets of the waters flowing in ocean and river, or the devices that work on these waters. Let there be convened a council of experts and masters in mechanical art to deliberate what is needed to compose and construct these works."
+				</p>
+				<div class="quote-author">Brunelleschi, Filippo (1377-1446)</div>
+			</div>
 		</div>
+		<hr>
 		<div class="torso-also">
 			<label class="also-title">Não confundir com:</label>
 			<ul class="also-list">
