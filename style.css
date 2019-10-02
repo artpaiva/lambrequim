@@ -470,7 +470,7 @@ a:hover{
 	margin-top: 2rem;
 	padding: 2rem 1rem 1.2rem;
 	background-color: #FA9073;
-	background: linear-gradient( 250deg, #373F8055, #e6a64677, #57bb5455, #47B9C555, #8056f555, #9454b977, #d6667e77, #e6a64677, #ca5a5a77, #c4404b55, #432F5C33, #201a7422);/*#68FD138, #20E61D, #0a0b18*/
+	background: linear-gradient( 250deg, #373F8055, #e6a64677, #57bb5455, #47B9C555, #8056f555, #9454b977, #d6667e77, #e6a64677, #ca5a5a77, #c4404b55, #432F5C33, #201a9433);/*#68FD138, #20E61D, #0a0b18*/
 	background-size: 1200% 1200%;
 	animation: rainbow_shift 60s ease-in-out alternate-reverse infinite;
 	color: #fff;
