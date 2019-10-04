@@ -97,6 +97,14 @@ a:hover{
 	/*border-bottom: 1px solid #fff;*/
 	mix-blend-mode: overlay;
 }
+@media only screen and (max-width: 1100px) {
+	.marquee-bound{
+		padding: 12rem 1rem 4rem;
+	}
+	.marquee-penant{
+		font-size: 5rem;
+	}
+}
 .frieze{
 	padding: 5rem 1rem 3rem;
 	background-color: #7687FF;
