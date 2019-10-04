@@ -157,6 +157,11 @@ a:hover{
 .frieze-list li a{
 	color: inherit;
 }
+@media only screen and (max-width: 480px) {
+	.frieze{
+		padding: 5rem 1rem 3rem;
+	}
+}
 
 .board{
 	position: sticky;
@@ -323,6 +328,12 @@ a:hover{
 		width: 100%;
 	}
 }
+@media only screen and (max-width: 480px) {
+	.baldachin-wrapper.sticky .baldachin-item{
+		pointer-events: none;
+		transform: translate(0, -40rem);
+	}
+}
 
 .appendix{
 	position: sticky;
@@ -411,7 +422,27 @@ a:hover{
 .quote-author:before{
 	content: '— ';
 }
+@media only screen and (max-width: 480px) {
+	.torso-quote{
+		padding: 0.4rem 1rem;
+	}
+}
 
+.torso-order{
+	padding: 1rem 2rem;
+	font-size: 1.2rem;
+	line-height: 2rem;
+	text-align: left;
+	list-style-type: upper-roman;
+}
+.torso-order li{
+	width: 100%;
+	font-size: 1.3rem;
+}
+.torso-order li:after{
+	content: '+';
+	float: right;
+}
 .torso-also{
 	padding: 2rem 0;
 	box-shadow: 0px 3px 3px -4px #aaa;
