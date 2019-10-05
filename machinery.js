@@ -1,29 +1,41 @@
 var baldachin;
 var sticky;
 window.onload = function () {
-    window.onscroll = function() {checkSticky()};
+	document.body.scrollTo(0, 0);
+	setBrand();
+	window.onresize = function() {setBrand()};
+	window.onscroll = function() {checkSticky()};
 
-    baldachin = document.getElementById("baldachin-wrap");
-    document.documentElement.scrollTo(0, 0);
-    sticky = baldachin.offsetTop - document.body.scrollTop;
+	baldachin = document.getElementById("baldachin-wrap");
+	document.documentElement.scrollTo(0, 0);
+	sticky = baldachin.offsetTop - document.body.scrollTop;
+	sticky = baldachin.offsetTop;
 }
 
+
+function setBrand() {
+	if(window.innerWidth <= 480)
+		document.getElementById('baldachinBrand').innerHTML = 'L';
+	else
+		document.getElementById('baldachinBrand').innerHTML = 'Lambrequins';
+}
 
 function checkSticky() {
-  if (window.pageYOffset >= sticky) {
-    // console.log('sticky');
-    baldachin.classList.add("sticky");
-  } else {
-    console.log('not sticky');
-    baldachin.classList.remove("sticky");
-  }
+	// console.log(`Scroll: ${window.scrollY}, Baldachin:${sticky}`);
+	if (window.scrollY >= sticky) {
+		// console.log('sticky');
+		baldachin.classList.add("sticky");
+	} else {
+		// console.log('not sticky');
+		baldachin.classList.remove("sticky");
+	}
 }
 function turnSearch(ele) {
-    ele.classList.toggle("active");
-    if(ele.classList.contains("active")) {
-        document.getElementById('baldachinSearch').focus();
-    }
+	ele.classList.toggle("active");
+	if(ele.classList.contains("active")) {
+		document.getElementById('baldachinSearch').focus();
+	}
 }
 function toTop(){
-    document.body.scrollTo(0, 0);
+	document.body.scrollTo(0, 0);
 }

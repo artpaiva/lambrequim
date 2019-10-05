@@ -33,7 +33,13 @@
 	</div>
 	<div class="baldachin-wrapper" id="baldachin-wrap">
 		<ul class="baldachin" id="baldachin-bar">
-			<li class="baldachin-brand" onclick="toTop()">
+			<li class="baldachin-search" onclick="turnSearch(this)">
+				<i class="material-icons">search</i>
+			</li>
+			<li class="baldachin-cover">
+				<input class="baldachin-input" id="baldachinSearch" type="" name="" placeholder="Pressione Enter para pesquisar" />
+			</li>
+			<li class="baldachin-brand" id="baldachinBrand" onclick="toTop()">
 				<label>Lambrequins</label>
 			</li>
 			<li class="baldachin-item">
@@ -44,12 +50,6 @@
 			</li>
 			<li class="baldachin-item">
 				<i class="material-icons">account_balance</i>
-			</li>
-			<li class="baldachin-search" onclick="turnSearch(this)">
-				<i class="material-icons">search</i>
-			</li>
-			<li class="baldachin-cover">
-				<input class="baldachin-input" id="baldachinSearch" type="" name="" placeholder="Pressione Enter para pesquisar" />
 			</li>
 		</ul>
 	</div>
