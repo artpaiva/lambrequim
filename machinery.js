@@ -1,13 +1,13 @@
 var baldachin;
 var sticky;
 window.onload = function () {
-	document.body.scrollTo(0, 0);
+	// document.body.scrollTo(0, 0);
 	setBrand();
 	window.onresize = function() {setBrand()};
 	window.onscroll = function() {checkSticky()};
 
 	baldachin = document.getElementById("baldachin-wrap");
-	document.documentElement.scrollTo(0, 0);
+	// document.documentElement.scrollTo(0, 0);
 	sticky = baldachin.offsetTop - document.body.scrollTop;
 	sticky = baldachin.offsetTop;
 }

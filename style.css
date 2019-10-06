@@ -55,6 +55,7 @@ a:hover{
 	background-size: 2rem;
 	/*background-attachment: fixed;*/
 	filter: drop-shadow(-4px 0px 0px #00000033);
+	mix-blend-mode: soft-light;
 }
 .marquee-frechal{
 	z-index: 102;
@@ -72,6 +73,7 @@ a:hover{
 	font-style: italic;
 	text-shadow: -4px 0 #66004444;
 	text-shadow: -4px 0 #333;
+	mix-blend-mode: overlay;
 }
 .marquee-penant.little{
 	font-size: 3rem;
@@ -86,8 +88,9 @@ a:hover{
 }
 .marquee-caption{
 	margin-bottom: -1rem;
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	font-family: 'Quattrocento', serif;
+	mix-blend-mode: soft-light;
 }
 .marquee-embroider{
 	max-width: 1000px;
@@ -106,7 +109,7 @@ a:hover{
 	}
 }
 .frieze{
-	padding: 5rem 1rem 3rem;
+	padding: 3rem 1rem 2rem;
 	background-color: #7687FF;
 	background-color: #373F80;
 	background: linear-gradient( 250deg, #57bb5455, rgba(71, 185, 197, 120), #8056f599, #9454b999, #d6667e99, #e6a64699, #ca5a5a99, #c4404b99, #432F5C99, #201a7499);/*#68FD138, #20E61D, #0a0b18*/
@@ -124,12 +127,12 @@ a:hover{
 }
 .frieze-inscription, .frieze-list, .frieze-type{
 	padding-left: 2rem;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	text-align: left;
 }
 .frieze-inscription{
 	padding-left: 0rem;
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 }
 .frieze-type{
 	margin-top: 1rem;
@@ -142,7 +145,7 @@ a:hover{
 	border-bottom: 1px solid transparent;
 }
 .frieze-list li{
-	opacity: 0.5;
+	opacity: 0.6;
 	display: inline-block;
 	padding: 0.4rem 0.6rem;
 	transition: 0.3s;
@@ -159,7 +162,7 @@ a:hover{
 }
 @media only screen and (max-width: 480px) {
 	.frieze{
-		padding: 5rem 1rem 3rem;
+		padding: 2rem 1rem 3rem;
 	}
 }
 
@@ -370,16 +373,17 @@ a:hover{
 	max-width: 800px;
 	min-height: 30rem;
 	margin: 0 auto;
-	padding: 1rem 1rem 3rem;
+	padding: 1rem 2rem 3rem;
 	/*box-shadow: 0 0.2rem 0.2rem 0 #00000033;*/
 	background-color: #fff;
 	color: #777;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	font-family: 'Lustria', serif;
 }
 @media only screen and (max-width: 1100px) {
 	.torso{
 		max-width: 100%;
+		padding: 1rem 1rem 3rem;
 	}
 }
 .torso-penant{
@@ -401,16 +405,16 @@ a:hover{
 	text-align: left;
 }
 .torso-card p{
-	font-size: 1.2rem;
+	font-size: 1rem;
 	text-indent: 2rem;
 	line-height: 2rem;
 	text-align: justify;
 }
 .torso-card p::first-letter{
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 }
 .torso-card p b{
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 }
 .torso-quote{
 	margin: 0.8rem auto;
@@ -436,14 +440,14 @@ a:hover{
 
 .torso-order{
 	padding: 1rem 2rem;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	line-height: 2rem;
 	text-align: left;
 	list-style-type: upper-roman;
 }
 .torso-order li{
 	width: 100%;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 }
 .torso-order li:after{
 	content: '+';
@@ -452,7 +456,7 @@ a:hover{
 .torso-also{
 	padding: 2rem 0;
 	box-shadow: 0px 3px 3px -4px #aaa;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	line-height: 2rem;
 	text-align: left;
 }
