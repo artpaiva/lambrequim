@@ -76,6 +76,10 @@ var janela = {
     name: 'Casciêna',
     description: '',
   },
+  lancette: {
+    name: 'Lanceta',
+    description: 'Uma janela lanceta é uma janela alta e estreita com um arco pontudo no topo.',
+  },
 };
 var paramento = {
   name: 'Paramento',
@@ -85,7 +89,7 @@ var paramento = {
   },
   silharda: {
     name: 'Silharda',
-    description: 'Simulação de uma aparelhação de blocos sobre o paramento',
+    description: 'Aparelhação de blocos sobre o paramento',
   },
   bugnato: {
     name: 'Bunhato/Rústico',
@@ -110,6 +114,14 @@ var paramento = {
   bardeau: {
     name: 'Pisarilha/Teroela',
     description: '',
+  },
+  bardeau: {
+    name: 'Moulura',
+    description: 'Elemento símil á cimalha e ao plínto, porém n\'outras áreas d\'uma parede.'
+  },
+  lignederefend: {
+    name: 'Refante/Tosque/Crósa',
+    description: 'Linha vertical ou horizontal escavada sobre o reboco do paramento de maneira para simular uma silharda.',
   },
 };
 var miscelaneo = {
@@ -141,6 +153,30 @@ var miscelaneo = {
   gypserie: {
     name: 'Gipsería',
     description: '',
+  },
+  baldachin: {
+    name: 'Baldaquino',
+    description: '',
+  },
+  enfeu: {
+    name: 'Enféu',
+    description: '',
+  },
+  fenetrage: {
+    name: 'Finestral/Finestrada',
+    description: '',
+  },
+  fronstispicio: {
+    name: 'Frontispício',
+    description: 'Se refere ao elementos arquitetônicos que compõem a fachada de um edifício.',
+  },
+  geminal: {
+    name: 'Geminal',
+    description: 'Se refere aos elementos arquitetônicos que dispõem-se lado à lado destes, sem entrar directamente em contacto um com o outro.',
+  },
+  guillochis: {
+    name: 'Guilochís',
+    description: 'Motífe ornamental de ondulações produzidas sobre o vidro, ou material símio.',
   },
 };
 var porta = {
@@ -188,6 +224,34 @@ var estanca = {
     name: 'Aubete',
     description: 'Pequena estança exterior destinada a baluarte dos usuários de transporte público rodoviário, esperando seu respectivo veículo (ônibus, táxi)',
   },
+  exedra: {
+    name: 'Êxedra',
+    description: 'Átrio semicircular com assentos cobertos ou expostos ao ar livre, que serviam como local para discussões intelectuais.',
+  },
+  capricho: {
+    name: 'Caprichol/Folly',
+    description: '',
+  },
+  fuste: {
+    name: 'Fuste',
+    description: 'Tipo de chalé dos alpes franceses',
+  },
+  quiosque: {
+    name: 'Quiosque',
+    description: 'Construção urbana comercial isolada geminalmente de outros edifícios(pavilhão), costumamente feita sobre a calçada.',
+  },
+  linterneau: {
+    name: 'Linternel',
+    description: 'Estança poligonal, usualmente logial, construída sobre a cúpula de algum edifício.',
+  },
+  gazebo: {
+    name: 'Gazebo',
+    description: 'Gazebo',
+  },
+  periptero: {
+    name: 'Períptero/Periptério',
+    description: 'Um edifício que é construído rodeado de colunas, criando um perístilo exterior.',
+  },
 };
 var exterior = {
   name: 'Exterior',
@@ -198,6 +262,22 @@ var exterior = {
   decalque: {
     name: 'Decalque/Vetrofânia',
     description: '',
+  },
+  devanture: {
+    name: 'Devantura',
+    description: '',
+  },
+  escarpe: {
+    name: 'Escarpa',
+    description: '',
+  },
+  horloge: {
+    name: 'Horloguo',
+    description: 'Relógio posto dentro de aubetes ou em torres, igrejas, para publicamente mostrar as horas ao povo percorrendo à sua frente',
+  },
+  lice: {
+    name: 'Líce/Lís',
+    description: 'Paliçada no entorno de uma fortificação ou estádio.',
   },
 };
 var chao = {
@@ -223,10 +303,10 @@ var remate = {
   },
   lambrequim: {
     name: 'Lambrequim',
-    description: '',
+    description: 'Retalhe de madeira usualmente sobposto abaixo do remate d\'um beiral.',
   },
   dentil: {
-    name: 'Dentil',
+    name: 'Dentículo',
     description: '',
   },
   modilhao: {
@@ -247,6 +327,10 @@ var remate = {
   },
   fascia: {
     name: 'Fáscia',
+    description: '',
+  },
+  estantat: {
+    name: 'Estantate',
     description: '',
   },
 };
