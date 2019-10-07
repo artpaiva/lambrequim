@@ -115,7 +115,7 @@ a:hover{
 	animation: rainbow_shift 40s ease-in-out alternate-reverse infinite;
 }
 .frieze *{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 .frieze-field{
 	width: 100%;
@@ -124,12 +124,12 @@ a:hover{
 }
 .frieze-inscription, .frieze-list, .frieze-type{
 	padding-left: 2rem;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	text-align: left;
 }
 .frieze-inscription{
 	padding-left: 0rem;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 }
 .frieze-type{
 	margin-top: 1rem;
@@ -412,6 +412,9 @@ a:hover{
 }
 .torso-card p b{
 	font-size: 1.1rem;
+}
+.torso p a:hover{
+	transform: translate(0, -0.4vh);
 }
 .torso-quote{
 	margin: 0.8rem auto;
