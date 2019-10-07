@@ -36,6 +36,9 @@ function turnSearch(ele) {
 		document.getElementById('baldachinSearch').focus();
 	}
 }
+function turnTorsoPanel(ele) {
+	ele.classList.toggle("active");
+}
 function toTop(){
 	document.body.scrollTo(0, 0);
 }
