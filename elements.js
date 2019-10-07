@@ -306,7 +306,7 @@ var elements = [ lucarna, janela, paramento, miscelaneo, porta, estanca, exterio
 
 function renderElements () {
   var tempElements = elements;
-  for(var i = 0; i < 5; i++) {
+  for(var i = 0; i < 6; i++) {
     var r = Math.floor(Math.random() * tempElements.length);
     var newRecTitle = document.createElement('div');
     newRecTitle.classList.add('frieze-type');

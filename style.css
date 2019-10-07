@@ -74,10 +74,7 @@ a:hover{
 	text-shadow: -4px 0 #66004444;
 	text-shadow: -4px 0 #333;
 	mix-blend-mode: overlay;
-}
-.marquee-penant.little{
-	font-size: 3rem;
-	text-shadow: -4px 0 transparent;
+	color: #ffeecc;
 }
 .marquee-gable{
 	margin-bottom: -1rem;
@@ -528,4 +525,13 @@ a:hover{
 .floor-box img{
 	margin: auto;
 	width: 2rem;
+}
+.floor-penant{
+	font-family: 'Cookie', cursive;
+	font-style: italic;
+	color: #fff;
+}
+.floor-penant.little{
+	font-size: 3rem;
+	text-shadow: -4px 0 transparent;
 }
