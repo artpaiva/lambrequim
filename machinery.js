@@ -8,8 +8,7 @@ window.onload = function () {
 
 	baldachin = document.getElementById("baldachin-wrap");
 	// document.documentElement.scrollTo(0, 0);
-	sticky = baldachin.offsetTop - document.body.scrollTop;
-	sticky = baldachin.offsetTop;
+	sticky = document.getElementById('marquee').offsetHeight;
 }
 
 

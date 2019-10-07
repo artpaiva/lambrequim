@@ -142,13 +142,14 @@ a:hover{
 	border-bottom: 1px solid transparent;
 }
 .frieze-list li{
+	cursor: pointer;
 	opacity: 0.6;
 	display: inline-block;
 	padding: 0.4rem 0.6rem;
 	transition: 0.3s;
 }
 .frieze-list li:hover{
-	opacity: 0.8;
+	opacity: 1;
 	transform: translate(0, -0.4vh);
 }
 .frieze-list li:hover a{
@@ -156,6 +157,23 @@ a:hover{
 }
 .frieze-list li a{
 	color: inherit;
+}
+.frieze-list li:before{
+	content: attr(description);
+	pointer-events: none;
+	opacity: 0;
+	position: absolute;
+	width: 20rem;
+	margin-top: 2rem;
+	margin-left: -1rem;
+	padding: 1rem;
+	box-shadow: 1px 2px 3px 1px #00000022;
+	background: #fff;
+	color: #777;
+	transition: 0.3s;
+}
+.frieze-list li:hover:before{
+	opacity: 1;
 }
 @media only screen and (max-width: 480px) {
 	.frieze{
@@ -232,6 +250,8 @@ a:hover{
 }
 .baldachin li i{
 	transition: color 0.2s, transform 0.3s;
+	/*color: #222;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }
 .baldachin li:not(.baldachin-search):hover i{
 	transform: translate(0, -0.6vh);
@@ -356,12 +376,18 @@ a:hover{
 	}
 }
 .appendix li{
+	cursor: pointer;
 	width: 3.6rem;
 	height: 3.6rem;
 	padding: 0.6rem;
 }
 .appendix li img{
 	width: 100%;
+	transition: 0.3s;
+}
+.appendix li:hover img{
+	opacity: 0.8;
+	transform: translate(-0.6rem, -0rem);
 }
 
 .torso{
@@ -439,7 +465,7 @@ a:hover{
 }
 
 .torso-order{
-	padding: 0.6rem 1.4rem;
+	padding: 0.6rem 0rem 0.6rem 1.4rem;
 	font-size: 1rem;
 	line-height: 2rem;
 	text-align: left;
@@ -448,11 +474,11 @@ a:hover{
 .torso-order li{
 	cursor: pointer;
 	width: 100%;
-	padding: 0.4rem 1rem;
+	padding: 0.4rem 0rem;
 	font-size: 1.1rem;
 	transition: 0.3s;
 }
-.torso-order li:hover{
+.torso-order li:hover, .torso-order li.active{
 	background: #00000003;
 	color: #FA9073;
 }

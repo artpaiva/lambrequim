@@ -325,6 +325,7 @@ function tellElement (item) {
     if(typeof item[k] === 'object'){
       var newRecItem = document.createElement('li');
       newRecItem.innerHTML = item[k].name;
+      newRecItem.setAttribute("description", item[k].description);
       newRecList.appendChild(newRecItem);
     }
   }

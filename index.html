@@ -15,7 +15,7 @@
 	<title>Lambrequins</title>
 </head>
 <body>
-	<div class="marquee-bound">
+	<div class="marquee-bound" id="marquee">
 		<div class="marquee-over"></div>
 		<!--div class="marquee-frechal"></div-->
 		<ul class="board">
@@ -58,55 +58,57 @@
 			<div class="frieze-inscription">Não sabe por onde começar? Tente alguma das recomendações editoriais:</div>
 		</div>
 	</div>
-	<ul class="appendix">
-		<li><img src="Icons/twitter-dark.png"/></li>
-		<li><img src="Icons/facebook-dark.png"/></li>
-		<li><img src="Icons/whatsapp-dark.png"/></li>
-	</ul>
-	<div class="torso">
-		<ul class="breadcrumb-box">
-			<li class="breadcrumb-bran">artpaiva</li>
-			<li class="breadcrumb-bran active">Lar de Lambrequins</li>
+	<div class="waist">
+		<ul class="appendix">
+			<li><img src="Icons/twitter-dark.png"/></li>
+			<li><img src="Icons/facebook-dark.png"/></li>
+			<li><img src="Icons/whatsapp-dark.png"/></li>
 		</ul>
-		<div class="torso-card">
-			<div class="torso-penant">Bem vindo a Lambrequins!</div>
-			<p>Este projeto surgiu da necessidade que o autor sentiu após constantemente vivenciar a frustração de querer referir a algum objeto que constituía a estrutura ou decoração de alguma construção, e achar-se reiterativamente n'uma situação em que o mais perto que chegava de ao menos nomear tal objeto, era uma falha tentative de articular descrições da forma ou cor deste.<br>
-			Com o <i>lambrequins.io</i>, espero tratar e acorrer este problema (mesmo que apenas à minha própria pessoa), através de poder prover a notação da terminologia arquitetônica para desenvolvimento do vocabulário necessário para discutí-la sem ressalvos.</p>
-		</div>
-		<div class="torso-card">
-			<div class="torso-title">Lambrequins</div>
-			<p>Inicialmente, é necessário uma introdução ao elemento que deu o nome a este projeto e orna a  <a href="">marquíse</a> do próprio, o <b>lambrequim</b>. Etimologicamente de origem holandesa: <i>lamperkijm</i> (/lã'perkin'/), e primeiramente transcrita à sua forma romança pelos franceses, os lambrequins são recortes ornamentais de madeira retalhada suspensas sob o <a href="">beiral</a> de casas tradicionalmente européias; que quando postos lado à lado em fieira horizontal formam um lambrequinado.
-			<br>Os lambrequins foram primeiro incorporados nas residências do Brasil por imigrantes poloneses, alemães, tchecos e outros povos eslavos; e assim, é mais comumente encontrado em centros de assentamento original destas comunidades, principalmente pela região Sul, desde o Paraná e Santa Catarina, e até mesmo em casas seletas e cresecentemente remotas do estado de São Paulo.</p>
-			<ol class="torso-order">
-				<li onclick="turnTorsoPanel(this)">Beiral</li>
-				<div class="torso-panel">Lambrequin suspenso sob o beiral do remate</div>
-				<li onclick="turnTorsoPanel(this)">Fenestral</li>
-				<div class="torso-panel">Lambrequin suspenso sob o lintel d'uma janela</div>
-			</ol>
-			<div class="torso-quote">
-				<p>"We must not show to all and sundry the secrets of the waters flowing in ocean and river, or the devices that work on these waters. Let there be convened a council of experts and masters in mechanical art to deliberate what is needed to compose and construct these works."
-				</p>
-				<div class="quote-author">Brunelleschi, Filippo (1377-1446)</div>
+		<div class="torso">
+			<ul class="breadcrumb-box">
+				<li class="breadcrumb-bran">artpaiva</li>
+				<li class="breadcrumb-bran active">Lar de Lambrequins</li>
+			</ul>
+			<div class="torso-card">
+				<div class="torso-penant">Bem vindo a Lambrequins!</div>
+				<p>Este projeto surgiu da necessidade que o autor sentiu após constantemente vivenciar a frustração de querer referir a algum objeto que constituía a estrutura ou decoração de alguma construção, e achar-se reiterativamente n'uma situação em que o mais perto que chegava de ao menos nomear tal objeto, era uma falha tentative de articular descrições da forma ou cor deste.<br>
+				Com o <i>lambrequins.io</i>, espero tratar e acorrer este problema (mesmo que apenas à minha própria pessoa), através de poder prover a notação da terminologia arquitetônica para desenvolvimento do vocabulário necessário para discutí-la sem ressalvos.</p>
+			</div>
+			<div class="torso-card">
+				<div class="torso-title">Lambrequins</div>
+				<p>Inicialmente, é necessário uma introdução ao elemento que deu o nome a este projeto e orna a  <a href="">marquíse</a> do próprio, o <b>lambrequim</b>. Etimologicamente de origem holandesa: <i>lamperkijm</i> (/lã'perkin'/), e primeiramente transcrita à sua forma romança pelos franceses, os lambrequins são recortes ornamentais de madeira retalhada suspensas sob o <a href="">beiral</a> de casas tradicionalmente européias; que quando postos lado à lado em fieira horizontal formam um lambrequinado.
+				<br>Os lambrequins foram primeiro incorporados nas residências do Brasil por imigrantes poloneses, alemães, tchecos e outros povos eslavos; e assim, é mais comumente encontrado em centros de assentamento original destas comunidades, principalmente pela região Sul, desde o Paraná e Santa Catarina, e até mesmo em casas seletas e cresecentemente remotas do estado de São Paulo.</p>
+				<ol class="torso-order">
+					<li onclick="turnTorsoPanel(this)">Beiral</li>
+					<div class="torso-panel">Lambrequin suspenso sob o beiral do remate</div>
+					<li onclick="turnTorsoPanel(this)">Fenestral</li>
+					<div class="torso-panel">Lambrequin suspenso sob o lintel d'uma janela</div>
+				</ol>
+				<div class="torso-quote">
+					<p>"We must not show to all and sundry the secrets of the waters flowing in ocean and river, or the devices that work on these waters. Let there be convened a council of experts and masters in mechanical art to deliberate what is needed to compose and construct these works."
+					</p>
+					<div class="quote-author">Brunelleschi, Filippo (1377-1446)</div>
+				</div>
+			</div>
+			<hr>
+			<div class="torso-also">
+				<label class="also-title">Não confundir com:</label>
+				<ul class="also-list">
+					<li><a href="">Lambri</a></li>
+					<li><a href="">Balaústre</a></li>
+				</ul>
+				<label class="also-title">Elementos Relacionados:</label>
+				<ul class="also-list">
+					<li><a href="">Beiral</a></li>
+					<li><a href="">Mísula</a></li>
+					<li><a href="">Cornija</a></li>
+					<li><a href="">Dentículo</a></li>
+					<li><a href="">Boiserie</a></li>
+				</ul>
 			</div>
 		</div>
-		<hr>
-		<div class="torso-also">
-			<label class="also-title">Não confundir com:</label>
-			<ul class="also-list">
-				<li><a href="">Lambri</a></li>
-				<li><a href="">Balaústre</a></li>
-			</ul>
-			<label class="also-title">Elementos Relacionados:</label>
-			<ul class="also-list">
-				<li><a href="">Beiral</a></li>
-				<li><a href="">Mísula</a></li>
-				<li><a href="">Cornija</a></li>
-				<li><a href="">Dentículo</a></li>
-				<li><a href="">Boiserie</a></li>
-			</ul>
-		</div>
+		<div class="spine"></div>
 	</div>
-	<div class="spine"></div>
 	<div class="floor-box">
 		<img src="lambrequim.png"/>
 		<img src="lambrequim.png"/>
