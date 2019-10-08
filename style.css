@@ -513,6 +513,59 @@ a:hover{
 	padding-left: 1.2rem;
 }
 
+.lusofolio{
+	width: 100%;
+	margin: 1rem auto;
+	padding: 1rem 2rem;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	font-size: 1rem;
+	text-align: left;
+}
+.esfilaz {
+	text-align: left;
+	margin: 0.4rem auto;
+}
+.esfilaz li{
+	display: inline-block;
+}
+.esfilatio{
+	font-size: 1.2rem;
+}
+.esfiloutro{
+	font-size: 0.8rem;
+}
+.esfiloutro:before{
+	content: 'ou ';
+	font-style: italic;
+}
+.pronuncia{
+	margin-left: 0.2rem;
+}
+.pronuncia:after, .pronuncia:before{
+	content: '/';
+}
+.etymologia{
+	margin-left: 0.2rem;
+}
+.etymologia:before{
+	content: '(';
+}
+.etymologia:after{
+	content: ')';
+}
+.definition{
+	margin: 0.2rem auto;
+	margin-left: 1.6rem;
+	list-style-type: upper-roman;
+}
+.lusovene{
+	font-size: 0.7rem;
+	text-align: right;
+	font-style: italic;
+	text-decoration-line: underline;
+}
+
 .breadcrumb-box{
 	padding: 0 0.2rem 0.8rem;
 	border-bottom: 1px solid #00000008;
