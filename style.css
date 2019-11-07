@@ -531,6 +531,7 @@ a:hover{
 }
 .esfilatio{
 	font-size: 1.2rem;
+	font-weight: bold;
 }
 .esfiloutro{
 	font-size: 0.8rem;
@@ -560,6 +561,8 @@ a:hover{
 	list-style-type: upper-roman;
 }
 .lusovene{
+	cursor: pointer;
+	color: #FA9073;
 	font-size: 0.7rem;
 	text-align: right;
 	font-style: italic;
